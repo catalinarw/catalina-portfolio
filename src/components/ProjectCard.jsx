@@ -1,15 +1,24 @@
 function ProjectCard({ project }) {
   return (
-    <div>
-      <h3>{project.title}</h3>
+    <div className="bg-slate-900 border border-slate-800 rounded-xl p-6">
+      <h3 className="text-xl font-semibold mb-3">
+        {project.title}
+      </h3>
 
-      <p>{project.description}</p>
+      <p className="text-slate-300 mb-4">
+        {project.description}
+      </p>
 
-      <ul>
+      <div className="flex flex-wrap gap-2">
         {project.technologies.map((tech) => (
-          <li key={tech}>{tech}</li>
+          <span
+            key={tech}
+            className="bg-slate-800 px-3 py-1 rounded-full text-sm"
+          >
+            {tech}
+          </span>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }
