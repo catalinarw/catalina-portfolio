@@ -1,21 +1,27 @@
+import Layout from "../components/Layout";
+
 function About() {
   return (
-    <main className="min-h-screen bg-site">
-      <div className="max-w-4xl mx-auto px-6 py-16">
+    <Layout>
 
-        <h1 className="text-5xl font-bold mb-8">
-          About Me
-        </h1>
+      <h1 className="text-5xl font-bold mb-8">
+        About Me
+      </h1>
 
-        <p className="text-lg text-secondary leading-relaxed">
-          I'm a front-end developer and web designer with
-          experience building websites for nonprofits,
-          healthcare organizations, financial firms, and
-          membership-based organizations.
-        </p>
+      <p className="text-lg leading-relaxed mb-6">
+        I'm a front-end developer and web designer with
+        experience building websites for nonprofits,
+        financial organizations, healthcare providers,
+        and membership-based organizations.
+      </p>
 
-      </div>
-    </main>
+      <p className="text-lg leading-relaxed">
+        My background includes WordPress development,
+        React applications, CMS administration,
+        UX design, and client-facing web projects.
+      </p>
+
+    </Layout>
   );
 }
 
