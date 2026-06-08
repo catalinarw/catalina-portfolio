@@ -1,29 +1,77 @@
+import { Link } from "react-router-dom";
+
 function Hero() {
   return (
     <section className="min-h-screen bg-site p-6 md:p-12">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-0">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row">
 
         {/* LEFT PANEL */}
 
-        <div className="w-full lg:w-1/3 bg-panel shadow-xl p-10 flex flex-col items-center">
+        <div className="w-full lg:w-1/3 bg-panel shadow-xl p-10 flex flex-col items-center justify-between">
 
-          <img
-            src="/profile.jpg"
-            alt="Catalina Williams"
-            className="w-64 h-64 rounded-[3rem] object-cover mb-8"
-          />
+          <div className="flex flex-col items-center">
 
-          <h1 className="text-4xl font-bold text-center text-primary">
-            Catalina Williams
-          </h1>
+            <img
+              src="/profile.jpg"
+              alt="Catalina Williams"
+              className="w-64 h-64 rounded-[3rem] object-cover mb-8"
+            />
 
-          <p className="text-xl mt-4 text-secondary text-center">
-            Front-End Developer
-          </p>
+            <h1 className="text-4xl font-bold text-center text-primary">
+              Catalina Williams
+            </h1>
 
-          <p className="text-lg text-secondary text-center">
-            Web Designer
-          </p>
+            <p className="text-xl mt-4 text-secondary text-center">
+              Front-End Developer
+            </p>
+
+            <p className="text-lg text-secondary text-center">
+              Web Designer
+            </p>
+
+            <nav className="mt-12 w-full">
+              <ul className="space-y-5 text-center">
+
+                <li>
+                  <Link
+                    to="/"
+                    className="font-medium tracking-wide hover:text-violet-600 transition"
+                  >
+                    HOME
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    to="/about"
+                    className="font-medium tracking-wide hover:text-violet-600 transition"
+                  >
+                    ABOUT
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    to="/projects"
+                    className="font-medium tracking-wide hover:text-violet-600 transition"
+                  >
+                    PROJECTS
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    to="/contact"
+                    className="font-medium tracking-wide hover:text-violet-600 transition"
+                  >
+                    CONTACT
+                  </Link>
+                </li>
+
+              </ul>
+            </nav>
+
+          </div>
 
           <div className="mt-12 text-center">
             <p className="text-secondary">
@@ -39,15 +87,17 @@ function Hero() {
 
         {/* RIGHT PANEL */}
 
-        <div className="
-          w-full
-          lg:w-2/3
-          bg-accent-panel
-          shadow-lg
-          p-10
-          md:p-16
-          lg:rounded-l-[80px]
-        ">
+        <div
+          className="
+            w-full
+            lg:w-2/3
+            bg-accent-panel
+            shadow-lg
+            p-10
+            md:p-16
+            lg:rounded-l-[80px]
+          "
+        >
 
           <h2 className="text-sm uppercase tracking-[0.3em] mb-4">
             About Me
@@ -98,6 +148,7 @@ function Hero() {
               ))}
 
             </div>
+
           </div>
 
           {/* Featured Projects */}
@@ -144,19 +195,27 @@ function Hero() {
 
             <div className="mt-10 flex gap-4">
 
-              <button className="btn-primary">
+              <Link
+                to="/projects"
+                className="btn-primary"
+              >
                 View Projects
-              </button>
+              </Link>
 
-              <button className="
-                bg-white
-                px-6
-                py-3
-                rounded-xl
-                shadow-sm
-              ">
+              <Link
+                to="/contact"
+                className="
+                  bg-white
+                  px-6
+                  py-3
+                  rounded-xl
+                  shadow-sm
+                  hover:shadow-md
+                  transition
+                "
+              >
                 Contact Me
-              </button>
+              </Link>
 
             </div>
 
