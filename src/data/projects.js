@@ -2,52 +2,103 @@ const projects = [
   {
     id: 1,
     title: "CVNL Member Portal",
-    technologies: ["HubSpot", "CRM", "Membership Portal"],
+    slug: "cvnl-member-portal",
     description:
-      "Built a member portal supporting over 200 members with automated membership management."
+      "Built a member portal supporting 200+ members and streamlining member access to organizational resources.",
+    technologies: [
+      "WordPress",
+      "Member Portal",
+      "UX Design",
+      "Frontend Development"
+    ],
+    featured: true,
   },
+
   {
     id: 2,
     title: "Pine Tree Financial Partners",
-    technologies: ["WordPress", "Frontend Design"],
+    slug: "pine-tree-financial-partners",
     description:
-      "Redesigned the complete front-end experience and page layouts."
+      "Led a complete front-end redesign, creating a modern user experience and custom layouts aligned with client goals.",
+    technologies: [
+      "WordPress",
+      "UI Design",
+      "Frontend Development",
+      "Responsive Design"
+    ],
+    featured: true,
   },
+
   {
     id: 3,
     title: "Impact By Insight",
-    technologies: ["WordPress", "Elementor"],
+    slug: "impact-by-insight",
     description:
-      "Rebuilt the frontend experience while modernizing the site's design."
+      "Rebuilt the entire WordPress frontend using Elementor while improving usability and visual consistency.",
+    technologies: [
+      "WordPress",
+      "Elementor",
+      "CSS",
+      "Frontend Development"
+    ],
+    featured: true,
   },
+
   {
     id: 4,
     title: "ProsperSpark",
-    technologies: ["WordPress"],
+    slug: "prosperspark",
     description:
-      "Led redesign and implementation based on client requirements."
+      "Led a complete website redesign in WordPress based on client requirements and branding goals.",
+    technologies: [
+      "WordPress",
+      "UI Design",
+      "Responsive Design"
+    ],
+    featured: false,
   },
+
   {
     id: 5,
-    title: "RCG",
-    technologies: ["Web Design"],
+    title: "Crane Center",
+    slug: "crane-center",
     description:
-      "Independently redesigned and rebuilt the company's web presence."
+      "Redesigned the website frontend for a healthcare client, translating stakeholder requirements into a unique visual experience.",
+    technologies: [
+      "WordPress",
+      "Healthcare",
+      "UI Design",
+      "Frontend Development"
+    ],
+    featured: false,
   },
+
   {
     id: 6,
-    title: "The Crane Center",
-    technologies: ["WordPress", "UX Design"],
+    title: "Millard West Baseball",
+    slug: "millard-west-baseball",
     description:
-      "Created a custom front-end redesign aligned with client branding."
+      "Redesigned the website frontend and implemented volunteer signup functionality along with a sports events calendar.",
+    technologies: [
+      "WordPress",
+      "Event Calendar",
+      "Volunteer Management"
+    ],
+    featured: false,
   },
+
   {
     id: 7,
-    title: "Millard West Baseball",
-    technologies: ["WordPress"],
+    title: "RCG",
+    slug: "rcg",
     description:
-      "Redesigned website and implemented volunteer signup and event calendar features."
-  }
+      "Redesigned the website frontend to improve user experience and visual presentation.",
+    technologies: [
+      "Frontend Development",
+      "UI Design"
+    ],
+    featured: false,
+  },
 ];
 
 export default projects;

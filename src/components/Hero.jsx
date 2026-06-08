@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import projects from "../data/projects";
 function Hero() {
   return (
     <section className="min-h-screen bg-site p-6 md:p-12">
@@ -155,71 +155,29 @@ function Hero() {
 
           <div>
 
-            <h4 className="text-sm uppercase tracking-[0.3em] mb-6">
-              Featured Projects
-            </h4>
+  <h4 className="text-sm uppercase tracking-[0.3em] mb-6">
+    Featured Projects
+  </h4>
 
-            <div className="space-y-6">
+  <div className="space-y-6">
 
-              <div>
-                <h5 className="font-semibold text-xl">
-                  CVNL Member Portal
-                </h5>
+    {projects
+      .filter(project => project.featured)
+      .map(project => (
+        <div key={project.id}>
+          <h5 className="font-semibold text-xl">
+            {project.title}
+          </h5>
 
-                <p>
-                  Built a member portal supporting 200+ members.
-                </p>
-              </div>
+          <p>
+            {project.description}
+          </p>
+        </div>
+      ))}
 
-              <div>
-                <h5 className="font-semibold text-xl">
-                  Pine Tree Financial Partners
-                </h5>
+  </div>
 
-                <p>
-                  Complete front-end redesign and implementation.
-                </p>
-              </div>
-
-              <div>
-                <h5 className="font-semibold text-xl">
-                  Impact By Insight
-                </h5>
-
-                <p>
-                  Rebuilt WordPress frontend using Elementor.
-                </p>
-              </div>
-
-            </div>
-
-            <div className="mt-10 flex gap-4">
-
-              <Link
-                to="/projects"
-                className="btn-primary"
-              >
-                View Projects
-              </Link>
-
-              <Link
-                to="/contact"
-                className="
-                  bg-white
-                  px-6
-                  py-3
-                  rounded-xl
-                  shadow-sm
-                  hover:shadow-md
-                  transition
-                "
-              >
-                Contact Me
-              </Link>
-
-            </div>
-
-          </div>
+</div>
 
         </div>
 
