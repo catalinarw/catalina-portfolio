@@ -1,11 +1,17 @@
 function ProjectCard({ project }) {
   return (
-    <div className="bg-slate-900 border border-slate-800 rounded-xl p-6">
-      <h3 className="text-xl font-semibold mb-3">
+    <div className="
+      bg-panel
+      rounded-3xl
+      p-6
+      shadow-md
+    ">
+
+      <h3 className="text-2xl font-semibold mb-3">
         {project.title}
       </h3>
 
-      <p className="text-slate-300 mb-4">
+      <p className="text-secondary mb-4">
         {project.description}
       </p>
 
@@ -13,12 +19,19 @@ function ProjectCard({ project }) {
         {project.technologies.map((tech) => (
           <span
             key={tech}
-            className="bg-slate-800 px-3 py-1 rounded-full text-sm"
+            className="
+              bg-accent-panel
+              px-3
+              py-1
+              rounded-full
+              text-sm
+            "
           >
             {tech}
           </span>
         ))}
       </div>
+
     </div>
   );
 }

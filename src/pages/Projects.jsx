@@ -3,9 +3,10 @@ import ProjectCard from "../components/ProjectCard";
 
 function Projects() {
   return (
-    <main className="min-h-screen bg-slate-950 text-white">
-      <div className="max-w-6xl mx-auto px-6 py-16">
-        <h1 className="text-5xl font-bold mb-10">
+    <main className="min-h-screen bg-site">
+      <div className="max-w-7xl mx-auto px-6 py-16">
+
+        <h1 className="text-5xl font-bold mb-12 text-primary">
           Projects
         </h1>
 
@@ -17,6 +18,7 @@ function Projects() {
             />
           ))}
         </div>
+
       </div>
     </main>
   );
