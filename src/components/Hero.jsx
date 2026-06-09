@@ -11,12 +11,11 @@ function Hero() {
 
           <div className="flex flex-col items-center">
 
-            <img
-              src="/profile.jpg"
-              alt="Catalina Williams"
-              className="w-64 h-64 rounded-[3rem] object-cover mb-8"
-            />
-
+           <img
+  src="/images/profilephoto.jpg"
+  alt="Catalina Williams"
+  className="w-64 h-64 rounded-[3rem] object-cover mb-8"
+/>
             <h1 className="text-4xl font-bold text-center text-primary">
               Catalina Williams
             </h1>

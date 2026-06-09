@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 
 function Sidebar() {
   return (
-    <div className="w-full lg:w-1/3 bg-panel shadow-xl p-10 flex flex-col items-center justify-between">
+    <div className="w-full lg:w-1/3 bg-panel p-10 flex flex-col items-center justify-between">
 
       <div className="flex flex-col items-center">
 
         <img
-          src="/profile.jpg"
+          src="/images/profilephoto.jpg"
           alt="Catalina Williams"
           className="w-64 h-64 rounded-[3rem] object-cover mb-8"
         />

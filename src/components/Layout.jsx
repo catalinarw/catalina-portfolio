@@ -13,10 +13,10 @@ function Layout({ children }) {
             w-full
             lg:w-2/3
             bg-accent-panel
-            shadow-lg
             p-10
             md:p-16
             lg:rounded-l-[80px]
+            shadow-[0_8px_24px_rgba(0,0,0,0.06)]
           "
         >
           {children}
