@@ -11,10 +11,28 @@ function Sidebar() {
           alt="Catalina Williams"
           className="w-64 h-64 rounded-[3rem] object-cover mb-8"
         />
-
+<a
+  href="public/resume/Front-End Developer  React & Web Systems copy.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="
+    mb-8
+    px-6
+    py-3
+    rounded-xl
+    bg-violet-500
+    text-white
+    font-medium
+    hover:bg-violet-600
+    transition
+  "
+>
+  Download Resume
+</a>
         <h1 className="text-4xl font-bold text-center">
           Catalina Williams
         </h1>
+        
 
         <p className="text-xl mt-4 text-secondary text-center">
           Front-End Developer
@@ -44,6 +62,7 @@ function Sidebar() {
             </li>
 
           </ul>
+          
         </nav>
 
       </div>
