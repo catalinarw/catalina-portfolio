@@ -55,6 +55,7 @@ function Sidebar() {
 
             <li>
               <Link to="/projects">PROJECTS</Link>
+              <li><Link to="/projects/cvnl">CVNL</Link></li>
             </li>
 
             <li>

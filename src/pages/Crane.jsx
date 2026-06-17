@@ -1,4 +1,4 @@
-function Impact() {
+function Crane() {
   return (
     <>
       <h2 className="text-sm uppercase tracking-[0.3em] mb-4">
@@ -68,4 +68,4 @@ function Impact() {
   );
 }
 
-export default Impact;
+export default Crane;

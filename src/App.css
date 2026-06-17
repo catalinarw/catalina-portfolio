@@ -181,4 +181,29 @@
     right: 0;
     border-right-color: var(--border);
   }
+  .tech-pill {
+
+  padding: 6px 12px;
+
+  font-size: 12px;
+
+  border-radius: 999px;
+
+  background: #f4f6f8;
+
+  color: #222;
+
+  border: 1px solid #e2e6ea;
+
+  transition: all 0.2s ease;
+
+}
+
+.tech-pill:hover {
+
+  background: #e9eef5;
+
+  transform: translateY(-1px);
+
+}
 }
