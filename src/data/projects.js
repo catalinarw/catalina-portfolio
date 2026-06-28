@@ -1,16 +1,28 @@
+/**
+ * Projects data array - contains information for all portfolio projects
+ * Each project includes: id, featured status, title, description, role, technologies, results, and images
+ * This data is used to populate project listings and case study pages
+ */
 const projects = [
   {
+    // Unique identifier for URL routing
     id: "cvnl",
+    // Whether project appears in featured projects section on home page
     featured: true,
+    // Project title displayed in listings
     title: "CVNL Member Portal",
+    // Brief description for project cards
     description: "Built and maintained a member portal supporting 200+ members.",
 
+    // Longer overview text for case study
     overview:
       "Built and maintained a member portal serving over 200 organizational members.",
 
+    // Role/responsibilities in the project
     role:
       "Front-End Development, WordPress implementation, UX improvements, maintenance.",
 
+    // Technologies used in this project
     technologies: [
       "WordPress",
       "Elementor",
@@ -18,15 +30,19 @@ const projects = [
       "CSS"
     ],
 
+    // Project outcomes/results
     results:
       "Improved access to member resources and communications.",
 
+    // Project image path
     image: "/images/projects/cvnl.jpg",
 
+    // Live project URL (if available)
     liveUrl: "https://example.com"
   },
 
   {
+    // Impact By Insight project
     id: "impact",
     featured: true,
     title: "Impact By Insight",
@@ -50,6 +66,7 @@ const projects = [
   },
 
   {
+    // Prosper project - React-based UI project
     id: "prosper",
     featured: false,
     title: "Prosper",
@@ -73,6 +90,7 @@ const projects = [
   },
 
   {
+    // PineTree project - React responsive UI project
     id: "pinetree",
     featured: false,
     title: "PineTree",
@@ -96,6 +114,7 @@ const projects = [
   },
 
   {
+    // Crane project - React layout and interface project
     id: "crane",
     featured: false,
     title: "Crane",
@@ -119,6 +138,7 @@ const projects = [
   },
 
   {
+    // Konfluence.org redesign - WordPress project
     id: "konfluence",
     featured: false,
     title: "Konfluence.org Redesign",
@@ -142,6 +162,7 @@ const projects = [
   },
 
   {
+    // Personal Portfolio project - React with Vercel deployment
     id: "portfolio",
     featured: true,
     title: "Personal Portfolio",
@@ -164,8 +185,10 @@ const projects = [
 
     image: "/images/projects/portfolio.jpg",
 
+    // Live portfolio URL
     liveUrl: "https://catalina-portfolio-rust.vercel.app/"
   }
 ];
 
+// Export projects array for use throughout the application
 export default projects;
