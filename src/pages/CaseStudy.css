@@ -1,0 +1,92 @@
+/* Case Study page specific styles */
+.case-study-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.case-study-header {
+  margin-bottom: 60px;
+  border-bottom: 2px solid var(--bg-accent);
+  padding-bottom: 40px;
+}
+
+.case-study-header h2 {
+  color: var(--accent-primary);
+  font-size: 0.875rem;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.case-study-image {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  margin: 40px 0;
+  box-shadow: 0 20px 40px rgba(124, 108, 246, 0.12);
+  transition: transform 0.3s ease;
+}
+
+.case-study-image:hover {
+  transform: translateY(-4px);
+}
+
+.case-study-section {
+  margin-bottom: 50px;
+  line-height: 1.8;
+}
+
+.case-study-section h3 {
+  color: var(--text-primary);
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 16px;
+}
+
+.case-study-section h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 24px;
+  background: var(--accent-primary);
+  border-radius: 2px;
+}
+
+.case-study-section p {
+  color: var(--text-secondary);
+  font-size: 1.0625rem;
+  line-height: 1.8;
+}
+
+/* Tech pills styling */
+.tech-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.tech-pill {
+  background: linear-gradient(135deg, var(--bg-accent) 0%, rgba(212, 210, 245, 0.5) 100%);
+  color: var(--accent-primary);
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  border: 1px solid rgba(124, 108, 246, 0.2);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.tech-pill:hover {
+  background: var(--bg-accent);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(124, 108, 246, 0.15);
+  border-color: var(--accent-primary);
+}
