@@ -12,7 +12,7 @@ function Sidebar() {
           className="w-80 h-80 rounded-[3rem] object-cover mb-8 text-center"
         />
 <a
-  href="public/resume/Front-End Developer  React & Web Systems copy.pdf"
+  href="public/resume/Catalina_Williams_Resume.docx"
   target="_blank"
   rel="noopener noreferrer"
   className="
@@ -28,7 +28,26 @@ function Sidebar() {
     text-center
   "
 >
-  Download Resume
+  Download Plain Text Resume
+</a>
+<a
+  href="public/resume/Catalina_Williams_Resume_Visual-2.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="
+    mb-8
+    px-6
+    py-3
+    rounded-xl
+    bg-violet-500
+    text-white
+    font-medium
+    hover:bg-violet-600
+    transition
+    text-center
+  "
+>
+  Download Visual Resume
 </a>
         <h1 className="text-4xl font-bold text-left">
           Catalina Williams
