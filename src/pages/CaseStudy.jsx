@@ -36,7 +36,7 @@ function CaseStudy() {
       )}
 
       {project.images && project.images.length > 1 && (
-        <section className="mb-10 grid sm:grid-cols-2 gap-4">
+        <section className="mb-10 columns-1 sm:columns-2 gap-4">
           {project.images
             .filter((src) => src !== project.image)
             .map((src) => (
@@ -44,7 +44,7 @@ function CaseStudy() {
                 key={src}
                 src={src}
                 alt={project.title}
-                className="w-full rounded-2xl shadow-md"
+                className="w-full rounded-2xl shadow-md mb-4 break-inside-avoid"
               />
             ))}
         </section>

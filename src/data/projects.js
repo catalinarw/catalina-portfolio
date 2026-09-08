@@ -179,7 +179,21 @@ const projects = [
     results:
       "Improved site structure and overall user experience.",
 
-    image: "/images/projects/konfluence.jpg"
+    image: "/images/projects/konfluence-1.jpg",
+
+    // Additional case study photos
+    images: [
+      "/images/projects/konfluence-1.jpg",
+      "/images/projects/konfluence-2.jpg",
+      "/images/projects/konfluence-3.jpg",
+      "/images/projects/konfluence-4.jpg",
+      "/images/projects/konfluence-5.jpg",
+      "/images/projects/konfluence-6.jpg",
+      "/images/projects/konfluence-7.jpg"
+    ],
+
+    // Live project URL
+    liveUrl: "https://www.konfluence.org/new-homepage/"
   },
 
   {
