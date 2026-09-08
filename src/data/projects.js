@@ -90,27 +90,38 @@ const projects = [
   },
 
   {
-    // PineTree project - React responsive UI project
+    // PineTree Financial Partners - WordPress redesign
     id: "pinetree",
     featured: false,
-    title: "PineTree",
-    description: "Web project focused on responsive UI and structured components.",
+    title: "PineTree Financial Partners",
+    description: "Redesigned a WordPress site for a Colorado hard money lender.",
 
     overview:
-      "Built a structured front-end experience with reusable components.",
+      "Redesigned the entire PineTree Financial Partners site using a customized Envato template.",
 
-    role: "Front-End Development",
+    role: "Redesigned the entire site using a customized Envato template.",
 
     technologies: [
-      "React",
-      "CSS",
-      "JavaScript"
+      "WordPress",
+      "Elementor",
+      "CSS"
     ],
 
     results:
-      "Improved responsiveness and UI structure.",
+      "Delivered a fully redesigned site for the client.",
 
-    image: "/images/projects/pinetree.jpg"
+    image: "/images/projects/pinetree-1.jpg",
+
+    // Additional case study photos
+    images: [
+      "/images/projects/pinetree-1.jpg",
+      "/images/projects/pinetree-2.jpg",
+      "/images/projects/pinetree-3.jpg",
+      "/images/projects/pinetree-4.jpg"
+    ],
+
+    // Live project URL (site has since changed from the version built here)
+    liveUrl: "https://www.pinetreefinancialpartners.com"
   },
 
   {
@@ -159,6 +170,42 @@ const projects = [
       "Improved site structure and overall user experience.",
 
     image: "/images/projects/konfluence.jpg"
+  },
+
+  {
+    // Millard West Baseball - WordPress redesign for a high school team site
+    id: "millard-west-baseball",
+    featured: false,
+    title: "Millard West Baseball",
+    description: "Redesigned a WordPress site for a high school baseball program.",
+
+    overview:
+      "Redesigned the Millard West Wildcats Baseball team site, rebuilding it in Elementor from a customized Envato template.",
+
+    role:
+      "Redesigned the site in Elementor using a customized Envato template. Added a parent volunteer sign-up and an events calendar to list games.",
+
+    technologies: [
+      "WordPress",
+      "Elementor",
+      "CSS"
+    ],
+
+    results:
+      "Gave parents a clear way to sign up to volunteer and see the game schedule in one place.",
+
+    image: "/images/projects/millard-west-baseball-1.jpg",
+
+    // Additional case study photos
+    images: [
+      "/images/projects/millard-west-baseball-1.jpg",
+      "/images/projects/millard-west-baseball-2.jpg",
+      "/images/projects/millard-west-baseball-3.jpg",
+      "/images/projects/millard-west-baseball-4.jpg"
+    ],
+
+    // Live project URL
+    liveUrl: "https://mwcatsbaseball.org"
   },
 
   {

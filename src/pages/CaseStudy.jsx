@@ -35,6 +35,21 @@ function CaseStudy() {
         />
       )}
 
+      {project.images && project.images.length > 1 && (
+        <section className="mb-10 grid sm:grid-cols-2 gap-4">
+          {project.images
+            .filter((src) => src !== project.image)
+            .map((src) => (
+              <img
+                key={src}
+                src={src}
+                alt={project.title}
+                className="w-full rounded-2xl shadow-md"
+              />
+            ))}
+        </section>
+      )}
+
       <section className="mb-10">
         <h3 className="text-2xl font-bold mb-4">
           Project Overview
