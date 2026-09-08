@@ -14,12 +14,12 @@ function Projects() {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="columns-1 md:columns-2 gap-6">
         {projects.map((project) => (
           <Link
             key={project.id}
             to={`/projects/${project.id}`}
-            className="group"
+            className="group block break-inside-avoid mb-6"
           >
             <div className="
               bg-white
