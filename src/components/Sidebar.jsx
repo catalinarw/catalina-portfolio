@@ -1,6 +1,10 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import projects from "../data/projects";
 
 function Sidebar() {
+  const [isProjectsOpen, setIsProjectsOpen] = useState(false);
+
   return (
     <div className="w-full lg:w-1/3 bg-panel p-10 flex flex-col  justify-between">
 
@@ -74,14 +78,30 @@ function Sidebar() {
             </li>
 
             <li>
-              <Link to="/projects">PROJECTS</Link>
-              <li><Link to="/projects/cvnl">CVNL</Link></li>
-              <li><Link to="/projects/impact">Impact By Insight</Link></li>
-              <li><Link to="/projects/prosper">Prosper</Link></li>
-              <li><Link to="/projects/pinetree">PineTree</Link></li>
-              <li><Link to="/projects/crane">Crane</Link></li>
-              <li><Link to="/projects/konfluence">Konfluence.org Redesign</Link></li>
-              <li><Link to="/projects/portfolio">Personal Portfolio</Link></li>
+              <div className="flex items-center justify-between">
+                <Link to="/projects">PROJECTS</Link>
+                <button
+                  type="button"
+                  onClick={() => setIsProjectsOpen((open) => !open)}
+                  aria-expanded={isProjectsOpen}
+                  aria-label="Toggle projects submenu"
+                  className="ml-2 px-1"
+                >
+                  {isProjectsOpen ? "▾" : "▸"}
+                </button>
+              </div>
+
+              {isProjectsOpen && (
+                <ul className="ml-4 mt-3 space-y-3">
+                  {projects.map((project) => (
+                    <li key={project.id}>
+                      <Link to={`/projects/${project.id}`}>
+                        {project.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </li>
 
             <li>
