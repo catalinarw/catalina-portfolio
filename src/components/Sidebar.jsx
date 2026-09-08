@@ -12,7 +12,7 @@ function Sidebar() {
           className="w-80 h-80 rounded-[3rem] object-cover mb-8 text-center"
         />
 <a
-  href="public/resume/Catalina_Williams_Resume.docx"
+  href="/resume/Catalina_Williams_Resume.docx"
   target="_blank"
   rel="noopener noreferrer"
   className="
@@ -31,7 +31,7 @@ function Sidebar() {
   Download Plain Text Resume
 </a>
 <a
-  href="public/resume/Catalina_Williams_Resume_Visual-2.pdf"
+  href="/resume/Catalina_Williams_Resume_Visual-2.pdf"
   target="_blank"
   rel="noopener noreferrer"
   className="
