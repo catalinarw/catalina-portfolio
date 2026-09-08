@@ -62,7 +62,17 @@ const projects = [
     results:
       "Improved usability and responsiveness.",
 
-    image: "/images/projects/impact.jpg"
+    image: "/images/projects/impact-1.jpg",
+
+    // Additional case study photos
+    images: [
+      "/images/projects/impact-1.jpg",
+      "/images/projects/impact-2.jpg",
+      "/images/projects/impact-3.jpg"
+    ],
+
+    // Live project URL
+    liveUrl: "https://impactbyinsight.com"
   },
 
   {
